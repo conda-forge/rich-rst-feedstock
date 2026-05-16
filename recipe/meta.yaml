@@ -22,7 +22,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - rich >=12.0.0
-    - docutils
+    - pygments >=2.0.0
 
 test:
   requires:
