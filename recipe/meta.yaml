@@ -1,5 +1,5 @@
 {% set name = "rich-rst" %}
-{% set version = "2.0.0" %}
+{% set version = "2.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 8ab5b89262016037063cfd64ad7404a5c32f2296a36028326e72ff759a91e956
+  sha256: cbe236ed0901d1ec8427cc6a50bf0a34353ba28ad014dc24def68bfe7f3b9e68
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - rich >=12.0.0
-    - docutils
+    - pygments >=2.0.0
 
 test:
   requires:
