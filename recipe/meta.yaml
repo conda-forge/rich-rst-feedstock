@@ -1,5 +1,5 @@
 {% set name = "rich-rst" %}
-{% set version = "2.0.1" %}
+{% set version = "2.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: cbe236ed0901d1ec8427cc6a50bf0a34353ba28ad014dc24def68bfe7f3b9e68
+  sha256: 664a669801695c5a126151338f309ce3ea3e0ea081c89a4130b8a4f659911ed9
 
 build:
   noarch: python
